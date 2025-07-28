@@ -248,7 +248,7 @@ export const useFarmingContract = () => {
       });
       
       // Calculate total pool count
-      const totalPoolCount = Number(poolLength);
+      let totalPoolCount = Number(poolLength);
       
       // If we can't get the farming stats directly, build them from other calls
       let totalValueLocked = 0n;
